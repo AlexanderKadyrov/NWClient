@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.module_name            = 'NWClient'
   s.summary                = 'NWClient'
   s.description            = 'NWClient'
-  s.version                = '1.0.0'
+  s.version                = '1.0.1'
 
   s.homepage               = 'https://github.com/AlexanderKadyrov/NWClient'
   s.author                 = { 'Alexander Kadyrov' => 'alexander-kad@yandex.ru' }
