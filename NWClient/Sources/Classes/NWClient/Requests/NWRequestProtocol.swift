@@ -6,5 +6,5 @@ public protocol NWRequestProtocol: class {
     var parameters: Parameters? { get }
     var headers: HTTPHeaders? { get }
     var method: HTTPMethod { get }
-    var source: String { get }
+    var source: String? { get }
 }

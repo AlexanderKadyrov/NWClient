@@ -8,7 +8,14 @@ open class NWClient: NWClientProtocol {
     
     public static func make(request: NWRequestProtocol) -> SignalProducer<Data, Error> {
         return SignalProducer<Data, Error> { observer, disposable in
-            let alamofire = Alamofire.request(request.source, method: request.method, parameters: request.parameters, encoding: request.encoding, headers: request.headers).validate()
+            
+            guard let source = request.source else {
+                observer.send(error: NSError.errorBadRequest)
+                return
+            }
+            
+            let alamofire = Alamofire.request(source, method: request.method, parameters: request.parameters, encoding: request.encoding, headers: request.headers).validate()
+            
             alamofire.responseData { response in
                 switch response.result {
                 case .success(let data):
@@ -22,9 +29,16 @@ open class NWClient: NWClientProtocol {
                     observer.send(error: error)
                 }
             }
+            
             disposable.observeEnded {
                 alamofire.cancel()
             }
         }
+    }
+}
+
+fileprivate extension Error {
+    static var errorBadRequest: Error {
+        return NSError(domain: "flight.com", code: 400, userInfo: [NSLocalizedDescriptionKey: "Bad request"])
     }
 }
