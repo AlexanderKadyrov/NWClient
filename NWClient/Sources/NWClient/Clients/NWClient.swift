@@ -15,6 +15,10 @@ open class NWClient: NWClientProtocol {
                     observer.send(value: data)
                     observer.sendCompleted()
                 case .failure(let error):
+                    #if DEBUG
+                    print("[ERROR]: \(Date())")
+                    print(error)
+                    #endif
                     observer.send(error: error)
                 }
             }
