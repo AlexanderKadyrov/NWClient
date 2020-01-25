@@ -116,6 +116,22 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		CE01476823DC89B5005BFAE0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F6C9C23DC487800D731F4 /* NWClient */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CE01476923DC89C4005BFAE0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CE01473123DC5DB9005BFAE0 /* SupportingFiles */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		CE5F6C7723DC43B800D731F4 = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +163,7 @@
 		CE5F6C8E23DC43B800D731F4 /* NWClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE01473123DC5DB9005BFAE0 /* SupportingFiles */,
+				CE01476923DC89C4005BFAE0 /* Sources */,
 			);
 			path = NWClientTests;
 			sourceTree = "<group>";
@@ -155,8 +171,8 @@
 		CE5F6C9B23DC486700D731F4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CE01476823DC89B5005BFAE0 /* Classes */,
 				CE01473023DC5D7B005BFAE0 /* SupportingFiles */,
-				CE5F6C9C23DC487800D731F4 /* NWClient */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
