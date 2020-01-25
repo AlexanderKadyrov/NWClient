@@ -20,6 +20,10 @@
 		CE5F6CA723DC4A8B00D731F4 /* NWRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CA523DC4A8B00D731F4 /* NWRequestProtocol.swift */; };
 		CE5F6CA923DC4B3F00D731F4 /* NWRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CA823DC4B3F00D731F4 /* NWRequest.swift */; };
 		CE5F6CAA23DC4B3F00D731F4 /* NWRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CA823DC4B3F00D731F4 /* NWRequest.swift */; };
+		CE5F6CAD23DC52EF00D731F4 /* NWServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CAC23DC52EF00D731F4 /* NWServiceProtocol.swift */; };
+		CE5F6CAE23DC52EF00D731F4 /* NWServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CAC23DC52EF00D731F4 /* NWServiceProtocol.swift */; };
+		CE5F6CB023DC535200D731F4 /* NWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CAF23DC535200D731F4 /* NWService.swift */; };
+		CE5F6CB123DC535200D731F4 /* NWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6CAF23DC535200D731F4 /* NWService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,8 @@
 		CE5F6CA123DC491400D731F4 /* NWClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWClientProtocol.swift; sourceTree = "<group>"; };
 		CE5F6CA523DC4A8B00D731F4 /* NWRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWRequestProtocol.swift; sourceTree = "<group>"; };
 		CE5F6CA823DC4B3F00D731F4 /* NWRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWRequest.swift; sourceTree = "<group>"; };
+		CE5F6CAC23DC52EF00D731F4 /* NWServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWServiceProtocol.swift; sourceTree = "<group>"; };
+		CE5F6CAF23DC535200D731F4 /* NWService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWService.swift; sourceTree = "<group>"; };
 		EC64D831B9115EF05A1C4552 /* Pods-NWClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWClient.debug.xcconfig"; path = "Target Support Files/Pods-NWClient/Pods-NWClient.debug.xcconfig"; sourceTree = "<group>"; };
 		FF0AAAA0DBD7AB4459AA6E3B /* Pods_NWClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5F6CA423DC4A4C00D731F4 /* Requests */,
+				CE5F6CAB23DC52CD00D731F4 /* Services */,
 				CE5F6CA023DC48F200D731F4 /* Clients */,
 			);
 			path = NWClient;
@@ -164,6 +171,15 @@
 				CE5F6CA823DC4B3F00D731F4 /* NWRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		CE5F6CAB23DC52CD00D731F4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F6CAC23DC52EF00D731F4 /* NWServiceProtocol.swift */,
+				CE5F6CAF23DC535200D731F4 /* NWService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,10 +358,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5F6CB023DC535200D731F4 /* NWService.swift in Sources */,
 				CE5F6CA923DC4B3F00D731F4 /* NWRequest.swift in Sources */,
 				CE5F6CA623DC4A8B00D731F4 /* NWRequestProtocol.swift in Sources */,
 				CE5F6C9E23DC48BB00D731F4 /* NWClient.swift in Sources */,
 				CE5F6CA223DC491400D731F4 /* NWClientProtocol.swift in Sources */,
+				CE5F6CAD23DC52EF00D731F4 /* NWServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,8 +373,10 @@
 			files = (
 				CE5F6C9023DC43B800D731F4 /* NWClientTests.swift in Sources */,
 				CE5F6CAA23DC4B3F00D731F4 /* NWRequest.swift in Sources */,
+				CE5F6CB123DC535200D731F4 /* NWService.swift in Sources */,
 				CE5F6CA323DC491400D731F4 /* NWClientProtocol.swift in Sources */,
 				CE5F6C9F23DC48BB00D731F4 /* NWClient.swift in Sources */,
+				CE5F6CAE23DC52EF00D731F4 /* NWServiceProtocol.swift in Sources */,
 				CE5F6CA723DC4A8B00D731F4 /* NWRequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
