@@ -1,15 +1,15 @@
 platform :ios, '9.0'
 use_frameworks!
 
-def shared_pods 
-	pod 'ReactiveSwift'
+def shared_pods
+  pod 'ReactiveSwift'
   pod 'Alamofire'
-end 
+end
 
 target 'NWClient' do
-	shared_pods
+  shared_pods
 end
 
 target 'NWClientTests' do
-	shared_pods
+  shared_pods
 end
