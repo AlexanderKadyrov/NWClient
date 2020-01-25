@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.homepage               = 'https://github.com/AlexanderKadyrov/NWClient'
   s.author                 = { 'Alexander Kadyrov' => 'alexander-kad@yandex.ru' }
-  s.source                 = { :http => 'https://github.com/AlexanderKadyrov/NWClient.git', :tag => s.version }
+  s.source                 = { :git => 'https://github.com/AlexanderKadyrov/NWClient.git', :tag => s.version }
   
   s.source_files           = 'NWClient/Sources/**/*.{h,swift}'
 
